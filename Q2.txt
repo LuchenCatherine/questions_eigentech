@@ -5,5 +5,11 @@ Q2:
 
 2. 机器学习模型：把所有的用户、商品、行为数据都建模成特征，是否购买建模成label，建模成一个回归模型。
 
-平时阅读的书籍：
-去哪些网站： 
+平时阅读的书籍：矩阵论，统计学习方法，机器学习等
+
+去哪些网站：
+http://ieeexplore.ieee.org/
+https://arxiv.org/
+https://www.cnblogs.com/
+https://www.csdn.net/
+等等
