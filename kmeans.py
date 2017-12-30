@@ -62,26 +62,3 @@ def kmeans(dataSet, k):
     print( 'Congratulations, cluster complete!' ) 
     return centroids, clusterAssment  
   
-# show your cluster only available with 2-D data  
-def showCluster(dataSet, k, centroids, clusterAssment):  
-    numSamples, dim = dataSet.shape  
-    if dim != 2:  
-        print ("Sorry! I can not draw because the dimension of your data is not 2!"  )
-        return 1  
-  
-    mark = ['or', 'ob', 'og', 'ok', '^r', '+r', 'sr', 'dr', '<r', 'pr']  
-    if k > len(mark):  
-        print ("Sorry! Your k is too large!")  
-        return 1  
-  
-    # draw all samples  
-    for i in range(numSamples):  
-        markIndex = int(clusterAssment[i, 0])  
-        plt.plot(dataSet[i, 0], dataSet[i, 1], mark[markIndex])  
-  
-    mark = ['Dr', 'Db', 'Dg', 'Dk', '^b', '+b', 'sb', 'db', '<b', 'pb']  
-    # draw the centroids  
-    for i in range(k):  
-        plt.plot(centroids[i, 0], centroids[i, 1], mark[i], markersize = 12)  
-  
-    plt.show()
